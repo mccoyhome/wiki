@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+<html>
+  <head>
+    <title>
+      blog
+    </title>
+  </head>
+
+  <body>
+    <h1>
+        <a href='/blog'>blog</a>
+    </h1>
+
+    <div>
+     <input type="button" class="btnr" value="blog" onclick="location.href='/blog'"/>
+     <input type="button" class="btnr" value="Log Out" onclick="location.href='/blog/logout'" />
+    </div>
+
+    <form method="post">
+      <label>
+        <div>subject</div>
+        <input type="text" name="subject" value="{{subject}}">
+      </label>
+
+      <label>
+        <div>content</div>
+        <textarea name="content">{{content}}</textarea>
+      </label>
+
+      <div class="error">{{error}}</div>
+
+      <input type="submit" value="Post entry">
+    </form>
+
+    
+  </body>
+</html>

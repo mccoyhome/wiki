@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+<html>
+  <head>
+    <title>
+      blog
+    </title>
+  </head>
+
+  <footer>
+    <input type="button" class="btnr" value="Home" onclick="location.href='/'"
+    />
+  </footer>
+
+  <body>
+    <h1>
+        <a href='/blog'>blog</a>
+    </h1>
+    
+    <form method="post">
+      <input type="submit" class="btn" value="New post">
+    </form>
+
+    {% for entry in contents %}
+      <div class="content">
+        <hr>
+        <div class="content-subject"><a href="/{{entry.id}}blog/{{entry.key().id()}}">{{entry.subject}}</a>
+        <small class="content-time">at {{entry.created.strftime("%Z %H:%M %A, %d %B %Y")}}</small>
+        <pre class="content-body">{{entry.content}}</pre>
+      </div>
+    {% endfor %}
+    <div style="float:right"> Queried {{age}} seconds ago</div>
+
+  </body>
+</html>

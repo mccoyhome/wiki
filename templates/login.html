@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+
+  <footer>
+    <input type="button" class="btn" value="Home" onclick="location.href='/'"
+    />
+  </footer>
+
+<html>
+  <head>
+    <title>login</title>
+  </head>
+
+  <body>
+    <h2>Log In</h2>
+    <form method="post">
+      <table>
+        <tr>
+          <td class="label">
+            Username
+          </td>
+          <td>
+            <input type="text" name="username" value="{{username}}">
+          </td>
+          <td class="error">
+           {{bad_name}}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label">
+            Password
+          </td>
+          <td>
+            <input type="password" name="password" value="">
+          </td>
+          <td class="error">
+            {{bad_pass}}
+          </td>
+        </tr>
+
+      </table>
+      <div class="error">{{log_error}}</div>
+      <input type="submit" value="Log in">
+    </form>
+  </body>
+ </html>

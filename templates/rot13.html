@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+
+<style>
+    .btn {
+        color:#505050;
+        background: -moz-linear-gradient(top, #f0f0f0, #cacaca 48%, #707070 50%, #cacaca 52%, #fafafa);
+        background: -webkit-gradient(linear, center top, center bottom, from(#f0f0f0), color-stop(0.48, #cacaca), color-stop(0.5, #707070 ), color-stop(0.52, #cacaca), to(#fafafa)); float: right;
+    }
+</style>
+
+<html>
+	<head>
+		<title>Unit 2 Rot 13</title>
+	</head>
+
+	<footer>
+   	 	<input type="button" class="btn" value="Home" onclick="location.href='/'"
+   		 />
+  	</footer>
+
+	<body>
+		<h2>Enter some text to ROT13:</h2>
+		<form method="post">
+		 	<textarea	name="text"
+						style="height: 100px; width: 400px;">{{usertext}}</textarea>
+		  <br>
+		  <input type="submit">
+		</form>
+	</body>
+</html>
+

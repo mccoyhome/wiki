@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      blog
+    </title>
+  </head>
+
+ <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <footer>
+      <input type="button" class="btn" value="Home" onclick="location.href='/'"
+      />
+    </footer>
+
+  <body>
+    <h1>
+        <a href='/blog'>blog</a>
+    </h1>
+
+    <form method="post">
+      <label>
+        <div>subject</div>
+        <input type="text" name="subject" value="{{subject}}">
+      </label>
+
+      <label>
+        <div>content</div>
+        <textarea name="content">{{content}}</textarea>
+      </label>
+      
+      <div class="error">{{error}}</div>
+      
+    </form>
+      <div style="float:right"> Queried {{age}} seconds ago</div>
+  </body>
+</html>

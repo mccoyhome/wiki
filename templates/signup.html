@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+ <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+
+  <footer>
+    <input type="button" class="btn" value="Home" onclick="location.href='/'"
+    />
+  </footer>
+
+<html>
+  <head>
+    <title>Sign Up</title>
+  </head>
+
+  <body>
+    <h2>Signup</h2>
+    <form method="post">
+      <table>
+        <tr>
+          <td class="label">
+            Username
+          </td>
+          <td>
+            <input type="text" name="username" value="{{username}}">
+          </td>
+          <td class="error">
+           {{bad_name}}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label">
+            Password
+          </td>
+          <td>
+            <input type="password" name="password" value="">
+          </td>
+          <td class="error">
+            {{bad_pass}}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label">
+            Verify Password
+          </td>
+          <td>
+            <input type="password" name="verify" value="">
+          </td>
+          <td class="error">
+            {{bad_verify}}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label">
+            Email (optional)
+          </td>
+          <td>
+            <input type="text" name="email" value="{{email}}">
+          </td>
+          <td class="error">
+            {{bad_mail}}
+          </td>
+        </tr>
+      </table>
+
+      <input type="submit" value="Subscribe">
+    </form>
+  </body>
+ </html>

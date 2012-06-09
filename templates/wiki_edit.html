@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+<html>
+  <head>
+    <title>
+      wiki
+    </title>
+  </head>
+
+  <body>
+    
+    <form method="post">
+      {% if edit %}
+        {{name}}
+        <a href='/logout?ident={{ident}}'>logout</a>
+        {% if edit == 'active' %}
+          <input type="submit" value="save">
+          {% else %}
+          <input type="submit" value="edit">
+        {% endif %}
+      {% endif %}
+
+        <textarea rows="15" style="width:1000px;" name="content" id="content">{{content}}</textarea>
+
+    </form>
+
+
+  </body>
+</html>
